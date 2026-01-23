@@ -21,8 +21,9 @@ PySpark-based ingestion is implemented using **dataset-specific notebooks**, whe
 Validated raw **Spark DataFrames** are standardized and written to **staging Delta tables using overwrite mode**, ensuring that each run maintains the latest trusted snapshot of source data.
 
 
-### 5. Data Quality Layer
-Implements cross-reference validation, business rule checks, and severity-based data quality scoring.
+### 5. Data Validation Layer
+Performs **cross-reference validation and business rule checks on staging Delta tables** to ensure referential integrity across datasets.
+
 
 ### 6. SCD Type 2 Layer
 Maintains historical dimension data using effective start/end dates and Delta Lake MERGE operations.
