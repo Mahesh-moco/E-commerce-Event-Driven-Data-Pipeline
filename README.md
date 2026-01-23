@@ -56,3 +56,9 @@ Inventory stock levels and warehouse availability information.
 ### Shipping Dataset  
 Shipping and delivery tracking data including shipment status and logistics details.  
 🔗 https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/shipping_2025_01_15.csv
+
+### Ingestion Notebooks
+
+PySpark-based ingestion is implemented using dataset-specific notebooks, where each notebook processes a single dataset 
+- Orders - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/01_orders_stage_load.ipynb
+
