@@ -37,7 +37,7 @@ Implements **Slowly Changing Dimension (Type 2)** logic to maintain historical d
 ## 📁 Dataset Descriptions
 
 - **Orders Dataset**  
-  Contains transactional order-level details such as order ID, order date, customer ID, product ID, quantity, price, and order status.
+  Here is the dataset used 
 
 - **Customers Dataset**  
   Stores customer master data including customer ID, customer name, contact information, location, and customer segmentation details.
