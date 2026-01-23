@@ -37,16 +37,14 @@ Implements **Slowly Changing Dimension (Type 2)** logic to maintain historical d
 ## 📁 Dataset Descriptions
 
 - **Orders Dataset**  
+  Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/orders_2025_01_15.csv
+- **Customers Dataset**  
   Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/customers_2025_01_15.csv
 
-- **Customers Dataset**  
-  Stores customer master data including customer ID, customer name, contact information, location, and customer segmentation details.
-
 - **Products Dataset**  
-  Holds product catalog information such as product ID, product name, category, brand, and pricing attributes.
+  Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/products_2025_01_15.csv
 
 - **Inventory Dataset**  
-  Tracks product stock levels, warehouse availability, and inventory movement across locations.
-
+  Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/inventory_2025_01_15.csv
 - **Shipping Dataset**  
-  Captures shipping and delivery details including shipment ID, associated order ID, shipping date, delivery status, and logistics information.
+  Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/shipping_2025_01_15.csv
