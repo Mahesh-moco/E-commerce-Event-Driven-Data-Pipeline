@@ -26,6 +26,11 @@ Implements Slowly Changing Dimension (Type 2) logic to maintain historical dimen
 
 ---
 
+### ETL Pipeline Workflow
+![E-commerce ETL Workflow](project-workflow.png)
+
+---
+
 ## Technology Used
 - Databricks (Notebooks, Workflows, External Volumes)
 - Apache Spark (PySpark)
@@ -57,6 +62,7 @@ Inventory stock levels and warehouse availability information.
 Shipping and delivery tracking data including shipment status and logistics details.  
 🔗 https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/shipping_2025_01_15.csv
 
+---
 ### Ingestion Notebooks
 
 PySpark-based ingestion is implemented using dataset-specific notebooks, where each notebook processes a single dataset:
@@ -84,3 +90,4 @@ PySpark-based ingestion is implemented using dataset-specific notebooks, where e
 
 - **Final Merge Operation** – Consolidates all processed data into target tables with SCD2 (Slowly Changing Dimension) logic  
   🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/08_final_merge_operation.ipynb)
+---
