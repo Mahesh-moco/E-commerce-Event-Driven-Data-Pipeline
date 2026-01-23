@@ -59,23 +59,28 @@ Shipping and delivery tracking data including shipment status and logistics deta
 
 ### Ingestion Notebooks
 
-**PySpark-based ingestion is implemented using dataset-specific notebooks, where each notebook processes a single dataset**
-- Orders ( This notebook orders data from source files and loads it into the staging table ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/01_orders_stage_load.ipynb
+PySpark-based ingestion is implemented using dataset-specific notebooks, where each notebook processes a single dataset:
 
-  
-- Customer ( This notebook processes customer data from source files and loads it into staging table ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/02_customer_stage_load.ipynb
+- **Orders** – Processes orders data from source files and loads it into the staging table  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/01_orders_stage_load.ipynb)
 
-- Products ( This notebook processes product data from source files and loads it into the staging table ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/03_products_stage_load.ipynb
+- **Customers** – Processes customer data from source files and loads it into the staging table  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/02_customer_stage_load.ipynb)
 
-- Inventory ( This notebook processes inventory data from source files and loads it into the staging table ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/04_inventory_stage_load.ipynb
+- **Products** – Processes product data from source files and loads it into the staging table  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/03_products_stage_load.ipynb)
 
-- Shipping ( This notebook processes shipping data from source file and load into the staging table ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/05_shipping_stage_load.ipynb
+- **Inventory** – Processes inventory data from source files and loads it into the staging table  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/04_inventory_stage_load.ipynb)
 
-- Data Validation ( This notebook performs comprehensive daa validation across all staging tables and applies business rules ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/06_data_validation.ipynb
+- **Shipping** – Processes shipping data from source files and loads it into the staging table  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/05_shipping_stage_load.ipynb)
 
-- Data Enrichment ( This notenook enriches the validated data with additional business metries and prepares it for analytic ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/07_data_enrichment.ipynb
+- **Data Validation** – Performs comprehensive data validation across all staging tables and applies business rules  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/06_data_validation.ipynb)
 
-- Final Merge Operation ( This notebook performs the final merge operation to consolidate all processed data into target table with SCD2 ( Slowly Changing Dimension) logic ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/08_final_merge_operation.ipynb
+- **Data Enrichment** – Enriches validated data with additional business metrics and prepares it for analytics  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/07_data_enrichment.ipynb)
 
-
-
+- **Final Merge Operation** – Consolidates all processed data into target tables with SCD2 (Slowly Changing Dimension) logic  
+  🔗 [Notebook Link](https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/08_final_merge_operation.ipynb)
