@@ -77,3 +77,5 @@ Shipping and delivery tracking data including shipment status and logistics deta
 
 - Final Merge Operation ( This notebook performs the final merge operation to consolidate all processed data into target table with SCD2 ( Slowly Changing Dimension) logic ) - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/ETL%20NOTEBOOK/08_final_merge_operation.ipynb
 
+
+
