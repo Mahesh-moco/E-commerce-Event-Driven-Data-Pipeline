@@ -4,23 +4,22 @@ Built an event-driven E-commerce ETL pipeline on Databricks (PySpark, Delta Lake
 
 
 ---
-
-## 🧩 3️⃣ Component-wise Architecture Explanation (Very Important)
-
-```md
 ## 🧩 Architecture Components
 
-### 1. Source Layer – Databricks Volumes
-Stores raw e-commerce data files including orders, customers, products, inventory, and shipping datasets.
+### 1. Source Layer – Amazon S3 (Databricks External Volumes)
+Raw e-commerce data files (orders, customers, products, inventory, and shipping) are stored in **Amazon S3** and accessed securely through **Databricks External Volumes** for scalable and governed ingestion.
+
 
 ### 2. Event Trigger Layer
 JSON trigger files initiate batch processing and control workflow execution in Databricks Workflows.
 
 ### 3. Ingestion Layer
-PySpark-based ingestion notebooks perform automated file loading, schema validation, and batch metadata tracking.
+PySpark-based ingestion is implemented using **dataset-specific notebooks**, where each notebook processes a single raw dataset (orders, customers, products, inventory, shipping). Raw data files are read into **Spark DataFrames** from Databricks External Volumes, followed by automated file loading and schema validation.
+
 
 ### 4. Staging Layer (Delta Lake)
-Raw data is standardized and stored as Delta tables to support validation and reprocessing.
+Validated raw **Spark DataFrames** are standardized and written to **staging Delta tables using overwrite mode**, ensuring that each run maintains the latest trusted snapshot of source data.
+
 
 ### 5. Data Quality Layer
 Implements cross-reference validation, business rule checks, and severity-based data quality scoring.
@@ -28,8 +27,3 @@ Implements cross-reference validation, business rule checks, and severity-based 
 ### 6. SCD Type 2 Layer
 Maintains historical dimension data using effective start/end dates and Delta Lake MERGE operations.
 
-### 7. Analytics & BI Layer
-Provides analytics-ready fact and dimension tables for dashboards, KPIs, customer segmentation, and CLV analysis.
-
-### 8. Monitoring & File Management
-Handles file archiving, error logging, batch status tracking, and pipeline observability.
