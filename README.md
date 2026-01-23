@@ -37,7 +37,7 @@ Implements **Slowly Changing Dimension (Type 2)** logic to maintain historical d
 ## 📁 Dataset Descriptions
 
 - **Orders Dataset**  
-  Here is the dataset used 
+  Here is the dataset used - https://github.com/Mahesh-moco/E-commerce-Event-Driven-Data-Pipeline/blob/main/data/2025_01_15/customers_2025_01_15.csv
 
 - **Customers Dataset**  
   Stores customer master data including customer ID, customer name, contact information, location, and customer segmentation details.
